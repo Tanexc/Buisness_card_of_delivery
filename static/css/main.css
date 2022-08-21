@@ -1,0 +1,120 @@
+main {
+    font-family: 'Comfortaa';
+}
+
+.copy-icon {
+    border-radius: 50%;
+}
+
+.copy-icon:active {
+    animation-name: clck;
+    animation-duration: 0.3s;
+}
+
+.copy-icon:hover {
+    animation-name: hov;
+    animation-duration: 0.2s;
+    background-color:#d6d6d6;
+}
+
+@keyframes clck {
+  0%   {background-color:#f5f5f5;}
+  10%  {background-color:#e6e6e6;}
+  15%  {background-color:#d6d6d6;}
+  25%  {background-color:#cecece;}
+  40%  {background-color:#bdbdbd;}
+  55%  {background-color:#bbbbbb;}
+  70%  {background-color:#bebebe;}
+  75%  {background-color:#d8d8d8;}
+  80%  {background-color:#e6e6e6;}
+  90%  {background-color:#f5f5f5;}
+  100% {background-color:#fafafa;}
+}
+
+@keyframes hov {
+  0%   {background-color:#f5f5f5;}
+  50%  {background-color:#e6e6e6;}
+  100%  {background-color:#d6d6d6;}
+}
+
+@media (min-width: 576px) {
+
+    .container-info {
+        font-size: 60px;
+    }
+    .container-contacts {
+        min-width: 100%;
+    }
+    .container-map {
+        min-height: 400px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    .container-info {
+            font-size: 44px;
+        }
+
+    .container-contacts {
+        min-width: 100%;
+    }
+    .container-map {
+        min-height: 800px;
+    }
+
+}
+
+
+
+@media (min-width: 992px) {
+
+    .container-info {
+            display: flex;
+            font-size: 24px;
+        }
+    .container-contacts {
+        min-width: 40%;
+    }
+    .container-map {
+        min-height: auto;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .container-info {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .container-contacts {
+        min-width: auto;
+    }
+    .container-map {
+        min-height: auto;
+    }
+
+}
+
+
+
+@media (min-width: 1400px) {
+
+    .container-info {
+        display: flex;
+        font-size: 20px;
+    }
+    .container-contacts {
+        min-width: auto;
+    }
+    .container-map {
+        min-height: auto;
+    }
+
+}

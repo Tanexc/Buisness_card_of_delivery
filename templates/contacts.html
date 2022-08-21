@@ -1,0 +1,62 @@
+{%extends 'main.html' %}
+
+{% block main %}
+
+<div class="container-main container-lg py-5">
+
+    <div class="row p-1">
+        <p align="center">qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty </p>
+    </div>
+
+    <div class="container-info row-auto p-1">
+        <div class="container-contacts col-3 p-2">
+            <div class="contact-card col py-2">
+                <div class="rounded-3 p-3 shadow">
+                    <div class="copy-icon col-1" onclick="copy('+7 (904) 662-57-74')"><img src="{{url_for('static', filename='images/duplicate.png')}}" width="100%"></div>
+                    <p align="center">
+                        <b>Телефон</b>
+                    </p>
+                    <p align="center" id="phone">
+                        +7 (904) 662-57-74
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-card col py-2">
+                <div class="rounded-3 p-3 shadow">
+                    <div class="copy-icon col-1" onclick="copy('safinirek05@gmail.com')"><a class="click-a"></a><img src="{{url_for('static', filename='images/duplicate.png')}}" width="100%"></div>
+                    <p align="center">
+                        <b>Почта</b>
+                    </p>
+                    <p align="center" id="email">
+                        safinirek05@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-card col py-2">
+                <div class="rounded-3 p-3 shadow">
+                    <p align="center">
+                        <b>График работы</b>
+                    </p>
+                    <p align="center" id="timetable">
+                        Без выходных и круглосуточно
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container-map col p-2 rounded-2 d-flex">
+            <div class="p-2 col">
+                <iframe style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143543.95032221515!2d48.93322258277215!3d55.7954218880147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead2b7caccd99%3A0x7fcb77b9b5ad8c65!2z0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1661106444728!5m2!1sru!2sru" class="rounded-3" width="100%" height="100%"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script type="text/javascript" src="{{url_for('static', filename='js/copy.js')}}"></script>
+{% endblock %}
