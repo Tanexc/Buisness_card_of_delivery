@@ -11,12 +11,6 @@ main {
     animation-duration: 0.3s;
 }
 
-.copy-icon:hover {
-    animation-name: hov;
-    animation-duration: 0.2s;
-    background-color:#d6d6d6;
-}
-
 @keyframes clck {
   0%   {background-color:#f5f5f5;}
   10%  {background-color:#e6e6e6;}
@@ -46,7 +40,11 @@ main {
         min-width: 100%;
     }
     .container-map {
-        min-height: 400px;
+        max-height:0px;
+        min-height: 0px;
+    }
+    .p-info {
+      font-size: 40px;
     }
 
 }
@@ -56,14 +54,19 @@ main {
 @media (min-width: 768px) {
 
     .container-info {
-            font-size: 44px;
+      display:flex;
+            font-size: 30px;
         }
 
     .container-contacts {
-        min-width: 100%;
+        min-width: 50%;
     }
     .container-map {
-        min-height: 800px;
+        max-height:0px;
+        min-height: 0px;
+    }
+    .p-info {
+      font-size: 32px;
     }
 
 }
@@ -73,14 +76,17 @@ main {
 @media (min-width: 992px) {
 
     .container-info {
-            display: flex;
-            font-size: 24px;
-        }
+        display: flex;
+        font-size: 17px;
+      }
     .container-contacts {
-        min-width: 40%;
+        min-width: 30%;
     }
     .container-map {
-        min-height: auto;
+        max-height: 100%;
+    }
+    .p-info {
+      font-size: 22px;
     }
 }
 
@@ -90,14 +96,17 @@ main {
 
     .container-info {
         display: flex;
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .container-contacts {
         min-width: auto;
     }
     .container-map {
-        min-height: auto;
+        max-height: 100%;
+    }
+    .p-info {
+      font-size: 20px;
     }
 
 }
@@ -114,7 +123,10 @@ main {
         min-width: auto;
     }
     .container-map {
-        min-height: auto;
+        max-height: 100%;
+    }
+    .p-info {
+      font-size: 24px;
     }
 
 }
