@@ -6,9 +6,17 @@ main {
     border-radius: 50%;
 }
 
+.container-image {
+  height: fit-content;
+}
+
 .copy-icon:active {
     animation-name: clck;
     animation-duration: 0.3s;
+}
+
+.card-info-container {
+  min-height: 100%;
 }
 
 @keyframes clck {
@@ -46,6 +54,10 @@ main {
     .p-info {
       font-size: 40px;
     }
+  .contact-card {
+      min-width: 50%;
+      max-width: 50%;
+    }
 
 }
 
@@ -54,8 +66,7 @@ main {
 @media (min-width: 768px) {
 
     .container-info {
-      display:flex;
-            font-size: 30px;
+            font-size: 24px;
         }
 
     .container-contacts {
@@ -66,7 +77,11 @@ main {
         min-height: 0px;
     }
     .p-info {
-      font-size: 32px;
+      font-size: 28px;
+    }
+  .contact-card {
+      min-width: 50%;
+      max-width: 50%;
     }
 
 }
@@ -76,7 +91,6 @@ main {
 @media (min-width: 992px) {
 
     .container-info {
-        display: flex;
         font-size: 17px;
       }
     .container-contacts {
@@ -88,6 +102,11 @@ main {
     .p-info {
       font-size: 22px;
     }
+
+    .contact-card {
+      min-width: 33%;
+      max-width: 33%;
+    }
 }
 
 
@@ -95,8 +114,7 @@ main {
 @media (min-width: 1200px) {
 
     .container-info {
-        display: flex;
-        font-size: 17px;
+        font-size: 22px;
     }
 
     .container-contacts {
@@ -106,7 +124,7 @@ main {
         max-height: 100%;
     }
     .p-info {
-      font-size: 20px;
+      font-size: 22px;
     }
 
 }
@@ -116,8 +134,7 @@ main {
 @media (min-width: 1400px) {
 
     .container-info {
-        display: flex;
-        font-size: 20px;
+        font-size: 24px;
     }
     .container-contacts {
         min-width: auto;
@@ -126,7 +143,7 @@ main {
         max-height: 100%;
     }
     .p-info {
-      font-size: 24px;
+      font-size: 26px;
     }
 
 }
